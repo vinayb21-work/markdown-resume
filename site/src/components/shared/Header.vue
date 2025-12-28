@@ -28,7 +28,7 @@
       -->
       <a
         class="round-btn"
-        href="http://github.com/junian/markdown-resume/"
+        href="https://vinayb21-work.github.io/markdown-resume/"
         target="_blank"
         rel="nofollow noopener"
       >
