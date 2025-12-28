@@ -19,110 +19,94 @@ export const DEFAULT_STYLES = {
   paper: "A4"
 } as ResumeStyles;
 
-export const DEFAULT_MD_CONTENT = `---
----
+export const DEFAULT_MD_CONTENT = `
+# Vinay Badhan
 
-# Bruce Wayne
+<span class="iconify" data-icon="tabler:phone"></span> [(+91) 8085519964](https://wa.me/11234567890)
+  : <span class="iconify" data-icon="tabler:mail"></span> [vinay.badhan21@gmail.com](mailto:vinay.badhan21@gmail.com)  
+  : <span class="iconify" data-icon="charm:person"></span> [Website](https://vinayb21-work.github.io/vinay-badhan/)
+  : <span class="iconify" data-icon="tabler:brand-linkedin"></span> [LinkedIn](https://www.linkedin.com/in/vinay-badhan-861a40104/)  
 
-<span class="iconify" data-icon="charm:person"></span> [example.com](https://example.com/)
-  : <span class="iconify" data-icon="tabler:brand-github"></span> [github.com/example](https://github.com/example)
-  : <span class="iconify" data-icon="tabler:phone"></span> [(+1) 123-456-7890](https://wa.me/11234567890)
+<span class="iconify" data-icon="ic:outline-location-on"></span> Bangalore, India
+  : <span class="iconify" data-icon="tabler:brand-github"></span> [Github (personal)](https://github.com/vinayb21)
+  : <span class="iconify" data-icon="tabler:brand-github"></span> [Github (work)](https://github.com/vinayb21-work)    
+  : <span class="iconify" data-icon="tabler:brand-medium"></span> [Medium](https://vinay-badhan21.medium.com/)  
 
-<span class="iconify" data-icon="ic:outline-location-on"></span> 1234 Abc Street, Example, EX 01234
-  : <span class="iconify" data-icon="tabler:brand-linkedin"></span> [linkedin.com/in/example](https://linkedin.com/in/example/)
-  : <span class="iconify" data-icon="tabler:mail"></span> [email@example.com](mailto:mail@example.com)
+## Summary
+Hands-on senior software engineer with deep experience in building robust, scalable, and cost-efficient backend systems. Led architecture and implementation of the developer assessment platform at HackerRank, enabling 10x growth and reduced cost per workspace by ~60%. Currently building the clinical trial study SaaS platform at Medable with automated workflows, which are a mix of deterministic and AI-assisted flows with human in the loop.
+
+## Skills
+**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-go"></span> Golang, <span class="iconify" data-icon="vscode-icons:file-type-ruby"></span> Ruby, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript
+
+**Frameworks:** MCP, LangGraph, Google Agent Kit, Gin, FastAPI, ExpressJS, Ruby on Rails 
+
+**Data:** PostgreSQL, MySQL, Apache Hudi, Spark, pgvector, Neo4j
+
+**Infra:**: AWS, GCP, Docker, CI/CD, Terraform, ELK
+
+
+**Interests:** Applied AI, Containers, Developer Platforms, Data Engineering, Engineering Management
 
 ## Experience
 
-**Machine Learning Engineer Intern**
-  : **Slow Feet Technology**
-  : **Jul 2021 - Present**
+**Engineering Manager (Hands-on)**
+  : **Medable Inc.**
+  : **June 2023 - Present**
 
-- Devised a new food-agnostic formulation for fine-grained cross-ingredient meal cooking and subsumed the recent popular works into the proposed scheme
-- Proposed a cream of mushroom soup recipe which is competitive when compared with the SOTA recipes with complex steps by only altering the way of cutting mushroom, published in NeurIPS 2099 (see [~P1])
-- Developed a pan for meal cooking which is benefiting the group members' research work
+Leading automated code generation and testing platform for clinical trial study building through LLM integration and fine tuning.
 
+***AI Platform***
+- Deployed AI-powered code generation agents leveraging **custom RAG** pipelines to auto-generate study extensions, tests, and deployments
+- Developed **Office 365 MCP** and tool integration for agent studio integration
+-  Migrated from a custom agent engine to **Google’s ADK**, significantly boosting system reliability and reducing maintenance effort.
 
-**Reseach Intern**
-  : **Paddling University**
-  : **Aug 2020 - Present**
+***Core Platform***
+- Architected self-serve platform enabling sponsors and CROs to independently build and validate studies
+- Transformed clinical trial study setup from a 6-month manual process to under a week through end-to-end automation
+- Worked with the professional services team to understand the domain and automate all the work with deterministic workflow development
+- Reversed profit margins from **-90% to +40%** per study by eliminating manual bottlenecks
+- USDM spec (JSON) standard implementation to be used as the source data for the entire self-serve platform 
+- Designed and developed a rule‑based evaluation engine for sending context‑aware notifications.
+- Load tested all the service involved in the self serve platform and optimised servies 
+- Established and scaled India-based engineering team, hiring and mentoring 6 developers
 
-- Designed an efficient method for mapo tofu quality estimation via thermometer
-- Proposed a fast stir frying algorithm for tofu cooking problems, which specifies the amount of the hot sauce instead of using terms like "as much as you can", published in CVPR 2077 (see [~P2])
-- Outperformed SOTA methods while cooking much more efficient in experiments on popular tofu
+**Tech Lead**
+  : **HackerRank**
+  : **June 2018 - June 2023**
 
+***IDE Infrastructure and Tooling***
+- Architected multi-cloud infrastructure spanning **AWS** and **GCP** based on VMs and containers with custom machine images and background processes (with auto-recovery) for exec and IDE
+- Reduced workspace costs by **~60%** across frontend, backend, and data science environments by migrating to a VM‑based IDE infrastructure.
+- Delivered **~$1.5M** annual savings through strategic cloud resource optimization
+- Built thin images and developed the framework to add stack specific packages to be used as machine images
+- Scaled workspace concurrency **10x** while improving system reliability
+- Migrated entire production traffic from older infrastructure to newer infrastructure within a month
+- Designed a custom routing system and workspace architecture using Docker Compose
+- Improved IDE launch‑time SLA from 80% to 95% using an intelligent provisioning layer with warm‑up strategies.
+- Improved IDE‑Editor launch SLA from 93% to 99.5% by building a new IDE‑Management‑Service in Golang.
+- CDN integration for IDE assets to reduce the load time and improve candidate experience
+- Spearheaded editor architecture and real-time collaboration features for data science assessments
 
-**Research Assistant**
-  : **Huangdu Institute of Technology**
-  : **Mar 2020 - Jun 2020**
-
-- Proposed a novel framework consisting of a spoon and a pair of chopsticks for eating mapo toufu
-- Designed a tofu filtering strategy inspired by beans grinding method for building a dataset for this new task
-- Designed two new evaluation criteria to assess the novelty and diversity of the eating plans
-- Outperformed baselines and existed methods substantially in terms of diversity, novelty and coherence
-
-
-**Reseach Intern**
-  : **Paddling University**
-  : **Jul 2018 - Aug 2018**
-
-- Designed two sandwiches consisting of breads and meat of two traditional bacon cheese burgers to make use of unused ingredients
-- Utilized the structure duality to boost the cooking speed of two dual tasks based on shared ingredients
-- Outperformed strong baselines on QWE'15 and ASDF'14 dataset
+***Data team***
+- Engineered real-time data pipeline processing 60M+ annual submissions with near-instant insights
+- Optimized Spark jobs, reducing computation time from 24 hours to under 2 minutes by garbage collection migration to G1GC and resource finetuning
+- Implemented end-to-end observability with logging, alerting, and monitoring dashboards
+- Unified schema data ingestion across interview scorecards, screening scores, challenges, and hackathon
 
 ## Education
 
-**M.S. in Computer Science**
-  : **Sep 2021 - Jan 2023**
-
-University of Charles River
-  : Boston, MA
-
-**B.Eng. in Software Engineering**
-  : **Sep 2016 - Jul 2020**
-
-Huangdu Institute of Technology
-  : Shanghai, China
-
-## Skills
-
-**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeScript, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML / <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java
-
-**Tools and Frameworks:** Git, PyTorch, Keras, scikit-learn, Linux, Vue, React, Django, $\\LaTeX$
-
-**Languages:** English (proficient), Indonesia (native)
-
-## Awards and Honors
-
-**Gold**, International Collegiate Catching Fish Contest (ICCFC)
-  : 2018
-
-**First Prize**, China National Scholarship for Outstanding Dragons
-  : 2017, 2018
-
-## Publications
-
-[~P1]: **Eating is All You Need**
-
-    <u>Haha Ha</u>, San Zhang
-
-    *Conference on Neural Information Processing Systems (NeurIPS), 2099*
-
-[~P2]: **You Only Cook Once: Unified, Real-Time Mapo Tofu Recipe**
-
-    <u>Haha Ha</u>, San Zhang, Si Li, Wu Wang
-
-    *Computer Vision and Pattern Recognition Conference (CVPR), 2077 **(Best Paper Honorable Mention)***
-
-`;
+**B.Eng. in Computer Science (SGSITS, Indore)**
+  : **June 2014 - April 2018**
+`
 
 export const PREVIEW_SELECTOR = "#vue-smart-pages-preview";
 
-export const DEFAULT_CSS_CONTENT = `/* Backbone CSS for Resume Template 1 */
+export const DEFAULT_CSS_CONTENT =`
+/* Backbone CSS for Resume Template 1 */
 
 /* Basic */
 
-${PREVIEW_SELECTOR} {
+#vue-smart-pages-preview {
   background-color: white;
   color: black;
   text-align: left;
@@ -132,36 +116,36 @@ ${PREVIEW_SELECTOR} {
   hyphens: auto;
 }
 
-${PREVIEW_SELECTOR} p,
-${PREVIEW_SELECTOR} li,
-${PREVIEW_SELECTOR} dl {
+#vue-smart-pages-preview p,
+#vue-smart-pages-preview li,
+#vue-smart-pages-preview dl {
   margin: 0;
 }
 
 /* Headings */
 
-${PREVIEW_SELECTOR} h1,
-${PREVIEW_SELECTOR} h2,
-${PREVIEW_SELECTOR} h3 {
+#vue-smart-pages-preview h1,
+#vue-smart-pages-preview h2,
+#vue-smart-pages-preview h3 {
   font-weight: bold;
 }
 
-${PREVIEW_SELECTOR} h1 {
-  font-size: 2.5em;
+#vue-smart-pages-preview h1 {
+  font-size: 2.0em;
   letter-spacing: 0.1em;
   text-align: center;
   margin-bottom: 0.25em;
 }
 
-${PREVIEW_SELECTOR} h2,
-${PREVIEW_SELECTOR} h3 {
-  margin-bottom: 0.25em;
-  margin-top: 1.0em;
+#vue-smart-pages-preview h2,
+#vue-smart-pages-preview h3 {
+  margin-bottom: 0.15em;
+  margin-top: 0em;
   font-size: 1.2em;
 }
 
-${PREVIEW_SELECTOR} h1,
-${PREVIEW_SELECTOR} h2 {
+#vue-smart-pages-preview h1,
+#vue-smart-pages-preview h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: darkgrey;
@@ -169,96 +153,96 @@ ${PREVIEW_SELECTOR} h2 {
 
 /* Lists */
 
-${PREVIEW_SELECTOR} ul,
-${PREVIEW_SELECTOR} ol {
-  padding-left: 1.5em;
+#vue-smart-pages-preview ul,
+#vue-smart-pages-preview ol {
+  padding-left: 1.0em;
   margin: 0.2em 0 1.0em 0;
 }
 
-${PREVIEW_SELECTOR} ul {
+#vue-smart-pages-preview ul {
   list-style-type: disc;
 }
 
-${PREVIEW_SELECTOR} ol {
+#vue-smart-pages-preview ol {
   list-style-type: decimal;
 }
 
 /* Definition Lists */
 
-${PREVIEW_SELECTOR} dl {
+#vue-smart-pages-preview dl {
   display: flex;
 }
 
-${PREVIEW_SELECTOR} dl dt,
-${PREVIEW_SELECTOR} dl dd:not(:last-child) {
+#vue-smart-pages-preview dl dt,
+#vue-smart-pages-preview dl dd:not(:last-child) {
   flex: 1;
 }
 
 /* Tex */
 
-${PREVIEW_SELECTOR} :not(span.katex-display) > span.katex {
-  font-size: 1em !important;
+#vue-smart-pages-preview :not(span.katex-display) > span.katex {
+  font-size: 0.6em !important;
 }
 
 /* SVG & Images */
 
-${PREVIEW_SELECTOR} svg.iconify {
+#vue-smart-pages-preview svg.iconify {
   vertical-align: -0.2em;
 }
 
-${PREVIEW_SELECTOR} img {
+#vue-smart-pages-preview img {
   max-width: 100%;
 }
 
 /* Header */
 
-${PREVIEW_SELECTOR} .resume-header {
+#vue-smart-pages-preview .resume-header {
   text-align: center;
 }
 
-${PREVIEW_SELECTOR} .resume-header h1 {
+#vue-smart-pages-preview .resume-header h1 {
   text-align: center;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
-${PREVIEW_SELECTOR} .resume-header-item:not(.no-separator)::after {
+#vue-smart-pages-preview .resume-header-item:not(.no-separator)::after {
   content: " | ";
 }
 
 /* Citations */
 
-${PREVIEW_SELECTOR} ul.crossref-list {
-  padding-left: 1.2em;
+#vue-smart-pages-preview ul.crossref-list {
+  padding-left: 0.2em;
 }
 
-${PREVIEW_SELECTOR} li.crossref-item p {
-  margin-left: 0.5em;
+#vue-smart-pages-preview li.crossref-item p {
+  margin-left: 0.3em;
 }
 
-${PREVIEW_SELECTOR} li.crossref-item::marker {
+#vue-smart-pages-preview li.crossref-item::marker {
   content: attr(data-caption);
 }
 
-${PREVIEW_SELECTOR} sup.crossref-ref {
-  font-size: 100%;
+#vue-smart-pages-preview sup.crossref-ref {
+  font-size: 90%;
   top: 0;
 }
 
 /* Dark & print mode */
 
-.dark ${PREVIEW_SELECTOR} {
+.dark #vue-smart-pages-preview {
   background-color: #334155;
   color: #e5e7eb;
 }
 
 @media print {
-  ${PREVIEW_SELECTOR} {
+  #vue-smart-pages-preview {
     background-color: white !important;
     color: black !important;
   }
 
-  .dark ${PREVIEW_SELECTOR} a {
+  .dark #vue-smart-pages-preview a {
     color: black !important;
   }
 }
