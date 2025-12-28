@@ -66,7 +66,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: "https://www.junian.dev/markdown-resume/"
+    url: "https://vinayb21-work.github.io"
   },
 
   pwa,

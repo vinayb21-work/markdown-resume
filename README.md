@@ -69,6 +69,7 @@ pnpm build
 
 - The original work: [Renovamen/oh-my-cv](https://github.com/Renovamen/oh-my-cv)
 - [billryan/resume](https://github.com/billryan/resume)
+- [junian/markdown-resume](https://www.junian.dev/markdown-resume)
 
 ## License
 

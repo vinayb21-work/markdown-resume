@@ -10,7 +10,7 @@
         <div text-center>
           <h1 text="c 3xl sm:4xl" v-html="$t('landing.hero')" />
           <div my-10 text-light-c sm:text-lg><BrandName /> {{ $t("landing.desc") }}</div>
-          <nuxt-link :to="$nuxt.$localePath('/resumes')">
+          <nuxt-link :to="$nuxt.$localePath('/')">
             <span
               class="text-white bg-brand rounded-lg mx-auto duration-200"
               p="x-4 y-3"
